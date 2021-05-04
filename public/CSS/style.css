@@ -1,0 +1,42 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+background-color: #EAC926;
+}
+
+.ultimasVisitas {
+    font-size: 24px;
+}
+.ofertas {
+    font-size: 24px;
+}
+.precios {
+    font-size: 18px;
+}
+.descuento {
+    font-size: 16px;
+}
+.descripcion {
+    font-size: 16px;
+}
+
+.burger-menu{
+    text-align: center;
+    color: white;
+}
+.finPag {
+    text-align: center;
+}
+
+.derechos {
+    text-align: initial;
+    font-weight: lighter;
+    font-size: small;
+    opacity: 0.6 ;
+}
+
+.tituloFooter {
+    font-weight: bold;
+}
