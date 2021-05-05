@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 html{
     font-family: 'Roboto', sans-serif;
 }
@@ -6,26 +9,68 @@ header {
 background-color: #EAC926;
 }
 
+
+.barraBusqueda {
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 6px;
+    border: solid 0.5px;
+}
+
+.searchBar {
+    margin: 0.7%;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
 .ultimasVisitas {
     font-size: 24px;
 }
+
 .ofertas {
     font-size: 24px;
 }
+
+.Producto {
+    width: 100%;
+    margin-top: 10px;
+}
+
 .precios {
     font-size: 18px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
+
 .descuento {
     font-size: 16px;
+    color: green;
+    margin-top: 1%;
 }
-.descripcion {
+
+.descripcionArticulo {
+    border: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.nombreArticulo {
     font-size: 16px;
 }
 
 .burger-menu{
+    width: 5%;
+    border-radius: 4px;
+    margin: auto;
+    background-color: blue;
     text-align: center;
     color: white;
 }
+
 .finPag {
     text-align: center;
 }
@@ -39,4 +84,8 @@ background-color: #EAC926;
 
 .tituloFooter {
     font-weight: bold;
+}
+
+.banner {
+    width: 100vw;
 }
