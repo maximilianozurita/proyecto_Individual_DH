@@ -1,8 +1,14 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 html{
     font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color:rgb(224, 224, 224);
 }
 
 header {
@@ -23,22 +29,46 @@ background-color: #EAC926;
     margin: 0.7%;
 }
 
+i.fas.fa-search::before{
+    background-color: rgb(224, 224, 224);
+    border-radius: 4px;
+    border: solid 0.5px;
+}
+
+.burger-menu{
+    width: 30px;
+    border-radius: 4px;
+    margin: auto;
+    padding: 5px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
 main {
     margin: auto;
     width: 90%;
+    
 }
 
 .ultimasVisitas {
     font-size: 24px;
 }
 
+
 .ofertas {
     font-size: 24px;
+    color: rgb(78, 78, 78);
 }
+
 
 .Producto {
     width: 100%;
     margin-top: 10px;
+}
+
+i.fas.fa-truck::before{
+color: rgba(17, 167, 25, 0.74)
 }
 
 .precios {
@@ -56,20 +86,14 @@ main {
 .descripcionArticulo {
     border: solid 1px #ebebeb;
     padding: 15px;
+    background-color: white;
 }
 
 .nombreArticulo {
     font-size: 16px;
 }
 
-.burger-menu{
-    width: 5%;
-    border-radius: 4px;
-    margin: auto;
-    background-color: blue;
-    text-align: center;
-    color: white;
-}
+
 
 .finPag {
     text-align: center;
@@ -88,4 +112,36 @@ main {
 
 .banner {
     width: 100vw;
+}
+
+/*---------------------------------VERSION MOBILE*------------------------------------*/
+@media (max-width:361px){
+    .descripcionArticulo{
+        display: none;
+    }
+
+    .navBar {
+        display: none;
+    }
+    
+    .loginBar{
+        display: none;
+    }
+
+}
+
+
+/*-------------------------------DESKTOP Y TABLETS---------------------------*/
+@media (min-width:769px){
+
+.descripcionArticulo {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.Producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.burger-menu{
+    display: none;
+}
+
 }
