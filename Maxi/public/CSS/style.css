@@ -1,8 +1,9 @@
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
 html{
     font-family: 'Roboto', sans-serif;
 }
@@ -10,95 +11,180 @@ html{
 body{
     background-color:rgb(224, 224, 224);
 }
-
+/*------------------------------------HEADER---------------------------------------*/
 header {
 background-color: #EAC926;
+padding: 10px;
+width: 90%;
+margin:auto;
 }
 
+.main-header-top-bar{
+    padding:10px;
+    margin: auto;
+}
+.topBar{
+    display: flex;
+}
+
+.main-header-bottom-bar{
+    padding:10px;
+    display: none;
+}
+
+.main-header-bottom-bar a{
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+}
+
+.logo {
+    width: 50%;
+}
+/*---- BARRA BUSQUEDA ----*/
 
 .barraBusqueda {
+    flex-grow: 0.5;
+    display: flex;
     width: 90%;
     background-color: white;
     margin: auto;
-    text-align: center;
     border-radius: 6px;
     border: solid 0.5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .searchBar {
     margin: 0.7%;
+    text-align: center;
 }
 
-i.fas.fa-search::before{
-    background-color: rgb(224, 224, 224);
-    border-radius: 4px;
-    border: solid 0.5px;
+i.fas.fa-search{
+    color: rgb(121, 121, 121);
+    border-left: 1px solid rgb(184, 182, 182);
+    padding: 2px;
+    font-size: 17px;
+    text-align: center;
 }
+
+
+.main-header-top-bar p{
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+/*----------BARRA NAVEGACION / LOGIN-----------*/
 
 .burger-menu{
+    display: block;
     width: 30px;
     border-radius: 4px;
-    margin: auto;
     padding: 5px;
-    background-color: blue;
+    font-size: 17px;
+    background-color: rgb(62, 62, 255);
     text-align: center;
+    margin: auto;
     color: white;
 }
 
+/*-----------------------------------MAIN--------------------------------------*/
 main {
     margin: auto;
     width: 90%;
-    
 }
+
+/*--ELEMENTOS DENTRO DE ULTIMAS VISITAS / OFERTAS--*/
 
 .ultimasVisitas {
-    font-size: 24px;
-}
-
-
-.ofertas {
     font-size: 24px;
     color: rgb(78, 78, 78);
 }
 
-
-.Producto {
-    width: 100%;
-    margin-top: 10px;
+.ofertas {
+    font-size: 24px;
+    color: rgb(78, 78, 78);    
 }
 
-i.fas.fa-truck::before{
-color: rgba(17, 167, 25, 0.74)
+/*------------SECCION ULTIMAS VISITAS / OFERTAS-----------*/
+.articulos{
+    display: flex;
+    flex-direction: column;
+}
+
+.Producto {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.descripcionArticulo {
+    display: none;     /*--------------->> Version mobile no se muestra*/
+    border: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+}
+
+i.fas.fa-truck{
+    color: rgba(17, 167, 25, 0.74);
+    display: block;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: 10%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.precioDescuento{
+    display: flex;
+    justify-content: flex-start;
 }
 
 .precios {
     font-size: 18px;
     margin-top: 1%;
     margin-bottom: 1%;
+    flex-grow: 0.3;
 }
 
 .descuento {
     font-size: 16px;
     color: green;
     margin-top: 1%;
+    flex-grow: 0.7;
 }
 
-.descripcionArticulo {
-    border: solid 1px #ebebeb;
-    padding: 15px;
-    background-color: white;
+.nombreArticulo{
+    font-size: 16px;
+    margin-top: 20px;
+    color: rgb(143, 143, 143);
 }
 
-.nombreArticulo {
+
+/*-------------------------------FOOTER---------------------------------*/
+
+footer p {
+    color: rgb(107, 107, 107);
     font-size: 16px;
 }
 
-
-
+/*--Tipo de pago--*/
+i.fas.fa-credit-card{
+    color: rgb(83, 86, 248);
+    font-size: 30px;
+}
 .finPag {
     text-align: center;
 }
 
+/*--Envios gratis--*/
+i.fas.fa-gift{
+    color: rgb(83, 86, 248);
+    font-size: 30px;
+}
 .derechos {
     text-align: initial;
     font-weight: lighter;
@@ -106,42 +192,74 @@ color: rgba(17, 167, 25, 0.74)
     opacity: 0.6 ;
 }
 
+/*--seguridad--*/
+i.fas.fa-user-shield{
+    color: rgb(83, 86, 248);
+    font-size: 30px;
+}
 .tituloFooter {
     font-weight: bold;
 }
 
-.banner {
-    width: 100vw;
-}
 
-/*---------------------------------VERSION MOBILE*------------------------------------*/
-@media (max-width:361px){
-    .descripcionArticulo{
-        display: none;
+/*----------------------------------MEDIAS QUERIES-------------------------------------*/
+
+/*------------------------------TABLETS (361 A 769px)----------------------------*/
+
+@media (min-width: 361px){
+
+    .main-header-top-bar{
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+    }
+    .main-header-top-bar p{
+        align-self: center;
+        font-size: 16px;
+    }
+    .main-header-bottom-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-header-bottom-bar ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-header-bottom-bar li {
+        margin: 0px 5px;        
     }
 
-    .navBar {
-        display: none;
+    .articulos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    .descripcionArticulo{
+        display: block;
+    }
+
+    .Producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 160px;
     }
     
-    .loginBar{
+    .burger-menu{
         display: none;
     }
 
+    
 }
+    
 
 
-/*-------------------------------DESKTOP Y TABLETS---------------------------*/
+/*-------------------------------DESKTOP (769px EN ADELANTE)---------------------------*/
 @media (min-width:769px){
-
-.descripcionArticulo {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-.Producto {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-.burger-menu{
-    display: none;
-}
+    .Producto{
+        min-width: none;
+        max-width: none;
+        width: 170px;
+    }
 
 }
