@@ -5,7 +5,7 @@ const publicPath = path.resolve(__dirname, "./public");
 app.use( express.static(publicPath));
 
 
-app.listen(3001,() =>
+app.listen(3002,() =>
 {
     console.log("Mercado liebre corriendo");
 });
