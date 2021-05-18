@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="top-header-1">
+                <a href="/" class="top-header-1__logo">
+                    <img src="/images/logo-mercado-liebre.svg" alt="LOGO" width="100%">
+                </a>
+                <div class="busqueda">
+                    <form action="" method="GET" class="barra-busqueda">
+                        <input type="text" name="usuario" placeholder="Busqueda" class="barra-busqueda__form">
+                        <button type="submit" class="barra-busqueda__icono"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="top-header-2">
+                <div class="compra-cuotas__contenedor-incono">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <p class="compra-cuotas__texto">Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </div>
+        <div class="bottom-header">
+                <nav>
+                    <ul type="none" class="bottom-header__contenedor-bar">
+                        <li><a class="bottom-header__texto" href='#'>Ofertas</a></li>
+                        <li><a class="bottom-header__texto" href='#'>Tiendas oficiales</a></li>
+                        <li><a class="bottom-header__texto" href='#'>Vender</a></li>
+                        <li><a class="bottom-header__texto" href='#'>Ayuda</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul type="none" class="bottom-header__contenedor-bar">
+                        <li>
+                            <a class="bottom-header__texto" href="/register">Creá tu cuenta
+                                <span class="bottom-header__icono">
+                                    <i class="far fa-id-card"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="bottom-header__texto" href="/login">Ingresá
+                                <span class="bottom-header__icono">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="bottom-header__texto" href='#'>Mis compras
+                                <span class="bottom-header__icono">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
+            
+        </div>
+        <div class="contenedor-burger">
+            <a href="#" class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+            
+    </header>
+    <main>
+        <form action="/BaseDatos" method="POST" class="form-registro">
+            <div class="tex-registros">
+                <input type="text" name="usuario" placeholder="Nombre de usuario" class="tex-registros__inputs">
+            </div>
+            <div class="tex-registros">
+                <input type="password" name="Contraseña" placeholder="Contraseña" class="tex-registros__inputs">
+            </div>
+            <div class="contenedor-button contenedor-button--ingresar">
+                    <a href="/">
+                        <button class="button button__save buton__save--ingresar" type="submit">Enviar</button>
+                    </a>
+            </div>
+        </form>
+    </main>    
+
+    <footer>
+        <div class="pie-pagina">
+            <ul type= none class="finPag">
+                <li class="contenedor-pie">
+                    <div class="icono-pie"><i class="fas fa-credit-card"></i></div>
+                    <h4 class="tituloFooter">Pagá con tarjeta o en efectivo</h4>
+                    <p class="cuerpo-footer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                </li>
+                <li class="contenedor-pie">
+                    <div class="icono-pie"><i class="fas fa-gift"></i></div>
+                    <h4 class="tituloFooter">Envío gratis desde $ 2.500</h4>
+                    <p class="cuerpo-footer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
+                </li>
+                <li class="contenedor-pie">
+                    <div class="icono-pie"><i class="fas fa-user-shield"></i></div>
+                    <h4 class="tituloFooter">Seguridad, de principio a fin</h4>
+                    <p class="cuerpo-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.</p>
+                </li>
+            </ul>
+            <ul type= none class="derechos" >
+                <li>
+                    <p class="derechos__texto"> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
