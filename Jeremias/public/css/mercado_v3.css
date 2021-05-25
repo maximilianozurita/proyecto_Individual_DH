@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+body p{
+    font-size:12px;
+}
+.subtitulo{
+    font-size: 24px;
+}
+.precios{
+    font-size:18px;
+}
+.descuentos , .descripciones{
+    font-size:16px;
+}
+/*---------------------------------------------------------FIN GENERALES --------------------------------------------*/
+/*---------------------------------------------------------HEADER --------------------------------------------*/
+.main_header{
+    background-color: #EAC926;
+}
+.search_bar{
+    display: flex;
+    width: 75%;
+    background-color: white;
+    margin: auto;
+    border: solid 0.5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-grow: 0.5;
+}
+.nav_bar ul li a{
+    text-decoration: none; 
+    color:black;
+}
+.login_bar ul li a{
+    text-decoration: none;
+    color:black;
+}
+.nav_bar ul,.login_bar ul{
+    list-style: none;
+}
+.dividir{
+    border:solid 2px transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo, .top_bar{
+    flex-basis:50%;
+}
+
+.burger-menu{
+    color:white;
+    background-color:#1259c3;
+    display:block;
+    max-width: 45px;
+    padding:15px 0;
+    border-radius:8px;
+    text-align:center;
+    font-size: 18px;
+    margin:auto;
+}
+.site{
+    display:none;
+}
+/*---------------------------------------------------------FIN HEADER --------------------------------------------*/
+/*---------------------------------------------------------MAIN --------------------------------------------*/
+
+.main_main{
+    margin:auto;
+    width:90%;
+    background-color: rgba(181, 189, 179, 0.555);
+}
+.last_views{
+    border:solid 1px transparent;
+}
+.productos{
+    margin:10px;
+    background-color:#ebebeb;
+}
+.caja{
+    /*display:none;*/
+    background-color:#ebebeb;
+    border:solid 1p #ebebeb;
+    border:0 15px;
+    position:relative;
+    opacity:0;
+}
+.caja:hover{
+    opacity:1;
+}
+
+.caja .texto_junto{
+    display:flex;
+    align-items: baseline;
+}
+
+.precios{
+    flex-grow: 0.3;
+}
+.descuentos{
+    flex-grow: 0.7;
+    color:#39b54a
+}
+main section article i{
+    display: block ;
+    font-size: 16px ;
+    padding: 5px;
+    width: 30px;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50% ;
+    position: absolute ;
+    right: 0 ;
+    top: -20px ;
+    color:#39b54a;
+}
+@media (min-width:361px){
+    
+    .separador{
+        display:flex;
+        border:solid 1px transparent;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .productos{
+        flex-basis: 40%;
+        align-self: baseline;
+    }
+}
+@media (min-width:769px){
+
+    
+    .separador{
+        display:flex;
+        border:solid 1px transparent;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .productos{
+        flex-basis: 20%;
+        align-self: baseline;
+    }
+}
+/*---------------------------------------------------------FIN MAIN --------------------------------------------*/
+/*---------------------------------------------------------FOOTER --------------------------------------------*/
+.main_footer{
+    margin:auto;
+    text-align: center;
+}
+.main_footer section i{
+    font-size:2em;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    color:#1259c3;
+}
+/*---------------------------------------------------------FIN FOOTER --------------------------------------------*/
+/*---------------------------------------------------------TABLETS--------------------------------------------*/
+@media (min-width:361px) 
+{
+    
+    .dividir{
+        border:solid 2px transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .site{
+        display:flex;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+    .nav_bar,.login_bar{
+        flex-basis:40%;
+    }
+    .nav_bar ul,.login_bar ul{
+        display:flex;
+    }
+    .nav_bar ul li,.login_bar ul li{
+        
+        margin: 0 5px;
+    }
+
+    .logo, .top_bar, .top_bar_texto{
+        flex-basis:33.3%;
+    }
+    .separador{
+        display:flex;
+        border:solid 1px transparent;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .productos{
+        flex-basis: 40%;
+        align-self: baseline;
+    }
+    /*.caja{
+        display:block;
+    }*/
+    .burger-menu{
+        display:none;
+    }
+}
+@media (min-width:460px)
+{
+    .site{
+        
+        font-size: 16px;
+    }
+}
+@media (min-width:769px) /*---------------------------------------------------------DESKTOP--------------------------------------------*/
+{
+    .separador{
+        display:flex;
+        border:solid 1px transparent;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .productos{
+        flex-basis: 20%;
+        align-self: baseline;
+    }
+    .caja{
+        box-shadow : 0px 0px 10px;
+    }
+    .columna{
+        display:flex;
+        margin-bottom:30px;
+    }
+    .main_footer i:hover{
+        color:yellow;
+    }
+}
+/*---------------------------------------------------------MAIN REGISTER------------------------*/
+.registro{
+    margin: auto;
+    max-width: 760px;
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+}
+.caja_register{
+    margin-bottom: 20px;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+}
+.caja_register input[type="radio"]{
+    width: initial;
+}
+/*---------------------------------------------------------MAIN LOGIN------------------------*/
+.login{
+    
+    margin: auto;
+    max-width: 760px;
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+}
+.caja_login{
+    margin-bottom: 30px;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align:center;
+}
+.caja_login textarea:focus,
+.caja_login input:focus{
+    border: 3px solid blue;
+}
+ form button{
+    border-radius:7px;
+    background-color:rgb(11, 149, 241);
+    color:black;
+    transition:0.5s;
+    
+}
+form button:hover {
+    background-color:#0022AA;
+}
+
